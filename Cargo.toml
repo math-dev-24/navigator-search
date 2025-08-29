@@ -1,0 +1,14 @@
+[package]
+name = "navigator"
+version = "0.1.0"
+edition = "2024"
+
+[workspace]
+
+[dependencies]
+url = "2.5.4"
+scraper = "0.24.0"
+reqwest = "0.12.23"
+tokio = { version = "1.47.1", features = ["rt", "rt-multi-thread", "macros"] }
+async-trait = "0.1.89"
+urlencoding = "2.1.3"
