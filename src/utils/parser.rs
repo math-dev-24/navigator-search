@@ -25,7 +25,7 @@ pub fn get_query_by_question(question: String) -> Query {
 
     Query {
         text: text.join(" "),
-        bang,
+        bang
     }
 }
 
@@ -40,7 +40,7 @@ mod tests {
         let question = "!test aide moi a faire ceci".to_string();
         assert_eq!(get_query_by_question(question), Query {
             text: "aide moi a faire ceci".to_string(),
-            bang: None
+            bang: None,
         });
     }
 
